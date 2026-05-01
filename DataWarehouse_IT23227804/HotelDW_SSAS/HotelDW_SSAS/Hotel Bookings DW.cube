@@ -1,0 +1,397 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c4449080-b3f9-4df0-90cf-dbc368acdf2d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Hotel Bookings DW</ID>
+  <Name>Hotel Bookings DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="61a3257f-3784-4572-b8ec-0070dcf1a23c">
+      <ID>Fact Bookings</ID>
+      <Name>Fact Bookings</Name>
+      <DimensionID>Fact Bookings</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="427499cf-b353-47a5-95a9-a6a44ace605f">
+          <AttributeID>Booking Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8e3ec4ef-7878-49a7-9628-ab283f9285c3">
+          <AttributeID>Room Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ac057ab3-57e9-45ae-ae5a-8294f60a8bed">
+          <AttributeID>Agent Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6f946989-ef3e-4dfc-8ac1-95029ec263aa">
+          <AttributeID>Meal Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="277516d3-84ab-4cb7-b1dc-f08252b4f317">
+          <AttributeID>Hotel Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b7a4beeb-271d-4fc4-8558-2e2460fdf469">
+          <AttributeID>Market Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cb40a295-5b1b-4d64-a8e6-851be0a65576">
+          <AttributeID>Customer Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cd7a8d25-f71d-460e-98b9-58418d896a1f">
+          <AttributeID>Date Sk</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="14d4e9e9-cb69-4ebb-996b-db75dea22cb1">
+      <ID>Dim Room</ID>
+      <Name>Dim Room</Name>
+      <DimensionID>Dim Room</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bd883be7-fcd4-4d6b-836b-19d686b3733d">
+          <AttributeID>Room Sk</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="96384ccd-13a2-4e3b-9895-40adb1425b56">
+      <ID>Dim Agent</ID>
+      <Name>Dim Agent</Name>
+      <DimensionID>Dim Agent</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0936830e-bc83-4770-afd2-38fb79359bfb">
+          <AttributeID>Agent Sk</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="97414229-ffaf-435e-a959-9f701c93e759">
+      <ID>Dim Meal</ID>
+      <Name>Dim Meal</Name>
+      <DimensionID>Dim Meal</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="08bdc3da-8b91-4c62-98ab-6446f3c257f6">
+          <AttributeID>Meal Sk</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1fbca4f4-ba07-478f-b394-d799ce5539d0">
+      <ID>Dim Hotel</ID>
+      <Name>Dim Hotel</Name>
+      <DimensionID>Dim Hotel</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bce00d54-6d2e-4c84-abde-de50df197740">
+          <AttributeID>Hotel Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a949c3a8-77f0-4165-812a-51e694a27903">
+          <AttributeID>Hotel Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="89b9974a-16a8-4dcb-830c-34307406fcc7">
+          <AttributeID>Hotel Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dbd94380-53fc-4a27-a6c3-c86518c8f3ef">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="796ca571-aa68-4219-802c-eaa8a4d03bd6">
+      <ID>Dim Market</ID>
+      <Name>Dim Market</Name>
+      <DimensionID>Dim Market</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e03718e7-538d-45be-8400-b83bebf6de1a">
+          <AttributeID>Market Sk</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bd0f06b8-05da-4969-ac9d-e1e8abe86845">
+      <ID>Dim Customer</ID>
+      <Name>Dim Customer</Name>
+      <DimensionID>Dim Customer</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="11ef19f5-56b6-4a89-9dbf-a52e89ef6677">
+          <AttributeID>Customer Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="760a2746-3ebb-4338-accd-124d5fb56822">
+          <AttributeID>Customer Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e069fcdf-1189-4c2c-abbe-ebc17a1550fb">
+          <AttributeID>Country Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="57f56e39-01b2-451c-bedf-8cec0e05ca77">
+          <AttributeID>Region</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1638257e-6363-4587-b8e6-ae23e8981ca2">
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f154abd3-a7ab-45bb-b943-7d23fdfee933">
+          <AttributeID>Date Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b00f50d7-8798-45fe-a590-e006c67d8888">
+          <AttributeID>Day Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e9fa1719-d8ee-4907-9090-c90f068fc22b">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c37c5d01-50b3-4388-a9e3-9890dcaaab11">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="86e104ac-242a-4022-beb2-43892a38b13b">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="6c73b596-3417-4528-b377-f26234ef1c62">
+      <ID>Fact Bookings</ID>
+      <Name>Fact Bookings</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="155f2cdc-25bb-4909-aa0c-c1e49ca1122d">
+          <ID>Booking Id</ID>
+          <Name>Booking Id</Name>
+          <Source dwd:design-time-name="9193298d-9899-4c49-a604-0e7fb27c3c6e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2c8bc3c0-e059-4463-8263-dd8a5ef3e2bf">
+              <TableID>dbo_fact_bookings</TableID>
+              <ColumnID>booking_id</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="242142ee-6356-49cb-aa28-e859d1d07b5a">
+          <ID>Adr</ID>
+          <Name>Adr</Name>
+          <Source dwd:design-time-name="8716f5c8-0dcc-4af8-aef6-9ebb2ad04287">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="22b5a915-8fed-4cbc-8b28-1ad3d2fb5d32">
+              <TableID>dbo_fact_bookings</TableID>
+              <ColumnID>adr</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="56e46341-900e-42f2-8268-06251db42ae4">
+          <ID>Stays In Weekend Nights</ID>
+          <Name>Stays In Weekend Nights</Name>
+          <Source dwd:design-time-name="756e47e6-68fa-4aec-8127-3a9108e2d3c7">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="91b675d3-34da-45aa-a38f-27dd893c0192">
+              <TableID>dbo_fact_bookings</TableID>
+              <ColumnID>stays_in_weekend_nights</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="80fb4ad4-dcae-4ae2-a9b8-7270cabc089d">
+          <ID>Stays In Week Nights</ID>
+          <Name>Stays In Week Nights</Name>
+          <Source dwd:design-time-name="47eacd32-d253-4223-9789-a4866120a4a1">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2343a117-47b9-4ef4-8b3b-c7ee482a049c">
+              <TableID>dbo_fact_bookings</TableID>
+              <ColumnID>stays_in_week_nights</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="15c2a761-e173-4e07-843a-3e2d16aa30ed">
+          <ID>Txn Process Time Hours</ID>
+          <Name>Txn Process Time Hours</Name>
+          <Source dwd:design-time-name="02f0aca2-9d19-431c-9a52-22737c4cf768">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3c58bb7c-f4b9-46b4-904a-9f114029e140">
+              <TableID>dbo_fact_bookings</TableID>
+              <ColumnID>txn_process_time_hours</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="2de6d774-8c01-49dc-9441-6cb8929006c9">
+          <CubeDimensionID>Fact Bookings</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d7909629-253b-4be6-9cb1-af4228443e9d">
+              <AttributeID>Booking Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fa0e83d9-dec5-4026-8a2b-ddf1c7984a95">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9fa25ac7-f7f6-4123-9908-2047dec44df5">
+                    <TableID>dbo_fact_bookings</TableID>
+                    <ColumnID>booking_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3a9701e9-4798-4a9d-a033-ad8feb091518">
+          <CubeDimensionID>Dim Room</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2d2a9e60-fb1d-4b42-8424-78566f618c58">
+              <AttributeID>Room Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6bf7cefb-306b-44e4-bb26-cfa583ae07b2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8653b99e-6531-4352-b186-8a149996ad86">
+                    <TableID>dbo_fact_bookings</TableID>
+                    <ColumnID>room_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="29251fd7-2583-4d9d-a0b6-0143051f77a0">
+          <CubeDimensionID>Dim Agent</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="25fd260e-c926-4515-b28b-5b9de4db8863">
+              <AttributeID>Agent Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ef664087-bdfc-4697-9708-01e07999af66">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7511f756-67b9-4c8f-b206-6591477f165f">
+                    <TableID>dbo_fact_bookings</TableID>
+                    <ColumnID>agent_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b4401692-ecf8-4004-a70f-862ae6e95629">
+          <CubeDimensionID>Dim Meal</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1da8a9ee-b826-4ea9-9001-ba358d0a2d8d">
+              <AttributeID>Meal Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ead06704-e204-4fbf-9ab7-829968c6821e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d5a584a5-c97a-4df0-bec2-192defdbdfbe">
+                    <TableID>dbo_fact_bookings</TableID>
+                    <ColumnID>meal_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fe18a400-c119-487e-a22f-b9fadcbc611f">
+          <CubeDimensionID>Dim Hotel</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d80aaa49-9c2a-4230-b99a-cb9899a92342">
+              <AttributeID>Hotel Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="563563d6-3a5d-4d9c-812a-ea5a1cbd3857">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b219b5c7-6552-4be9-87a5-0f906b971897">
+                    <TableID>dbo_fact_bookings</TableID>
+                    <ColumnID>hotel_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="75223d31-397b-452e-8211-c6a73cb2cacc">
+          <CubeDimensionID>Dim Market</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f5e62855-1e5a-40f8-afb7-313104d7aa7b">
+              <AttributeID>Market Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3dd880b8-5652-4557-aa80-640d4f0e6244">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="721bce74-a763-4477-b0db-75dd0128baed">
+                    <TableID>dbo_fact_bookings</TableID>
+                    <ColumnID>market_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c7804022-bf20-4ebd-bf43-c67869787514">
+          <CubeDimensionID>Dim Customer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5fa15c89-819e-4871-b167-08c3fd1cde01">
+              <AttributeID>Customer Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="97b1182c-acdf-45bf-ae39-f320b8e8fd2a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2a1b2344-5c9c-48c4-b811-883533a9a272">
+                    <TableID>dbo_fact_bookings</TableID>
+                    <ColumnID>customer_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="996d2668-57fa-4aa6-bd04-a890762a6b83">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="aca7662f-0a85-43ab-b998-8d5010154ff2">
+              <AttributeID>Date Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a6f2d112-371e-4ab2-bc91-01b7a5b7271d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c1198682-db16-4134-9486-2708e6aa7787">
+                    <TableID>dbo_fact_bookings</TableID>
+                    <ColumnID>date_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="2be00518-3732-4a63-a71b-6745a60fcd96">
+    <DataSourceViewID>Hotel Bookings DW</DataSourceViewID>
+  </Source>
+</Cube>
