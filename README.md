@@ -1,16 +1,16 @@
-# 🏨 Hotel Bookings — Data Warehouse & Business Intelligence
+# Hotel Bookings — Data Warehouse & Business Intelligence
 
-## 📌 Project Overview
+## Project Overview
 A complete DWBI project built on the Hotel Bookings dataset 
 (119,390 records) as part of IT3021 at SLIIT.
 
-## 🛠️ Technologies Used
+## Technologies Used
 - **SQL Server** — Data Warehouse (Star Schema)
 - **SSAS** — Multidimensional OLAP Cube
 - **Excel** — OLAP Operations (Roll-up, Drill-down, Slice, Dice, Pivot)
 - **Power BI** — Interactive Reports & Dashboards
 
-## 📐 Data Warehouse Architecture
+## Data Warehouse Architecture
 Star schema with:
 - `FactBooking` — central fact table
 - `DimDate` — date hierarchy (Year → Quarter → Month → Day)
@@ -50,7 +50,7 @@ Star schema with:
 
 | Load Fact Table                    | Cube Structure                       | PowerBI Matrix Report                |
 | ---------------------------------- | -------------------------------------- | ---------------------------------- |
-| ![App Screenshot](Screenshots/loadFact.png)    |   ![App Screenshot](Screenshots/Screenshot 2026-04-04 005851.png)      | ![App Screenshot](Screenshots/report1.png)    |
+| ![App Screenshot](Screenshots/loadFact.png)    |   ![App Screenshot](Screenshots/cube.png)      | ![App Screenshot](Screenshots/report1.png)    |
 
 | PowerBI Report with Cascading Filters                       | PowerBI report with Drill Down                        | PowerBI report with Drill Through |
 | ---------------------------------- | -------------------------------------- | ---------------------------------- |
