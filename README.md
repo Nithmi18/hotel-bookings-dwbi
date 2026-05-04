@@ -54,5 +54,5 @@ Star schema with:
 
 | PowerBI Report with Cascading Filters                       | PowerBI report with Drill Down                        | PowerBI report with Drill Through |
 | ---------------------------------- | -------------------------------------- | ---------------------------------- |
-| ![App Screenshot](Screenshots/report2.png)    |   ![App Screenshot](Screenshots/report3.png)      | ![App Screenshot]Screenshots/report4.png)    |
+| ![App Screenshot](Screenshots/report2.png)    |   ![App Screenshot](Screenshots/report3.png)      | ![App Screenshot](Screenshots/report4.png)    |
 
