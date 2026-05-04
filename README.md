@@ -44,4 +44,15 @@ Star schema with:
 [View Live Report] (https://app.powerbi.com/groups/me/reports/e9e9df43-8440-47ea-b3ea-70c1b85eefa9/81663d782d167e3ca030?experience=power-bi)
 
 ## 📷 Screenshots
-(Add screenshots of your Power BI reports here)
+| Star Schema                   | Staging                              | Load Dimentions                   |
+| ---------------------------------- | -------------------------------------- | ------------------------------ |
+| ![App Screenshot](Screenshots/starSchema.png)    |   ![App Screenshot](Screenshots/Staging.png)      |![App Screenshot](Screenshots/loadDimensions.png) |
+
+| Load Fact Table                    | Cube Structure                       | PowerBI Matrix Report                |
+| ---------------------------------- | -------------------------------------- | ---------------------------------- |
+| ![App Screenshot](Screenshots/loadFact.png)    |   ![App Screenshot](Screenshots/Screenshot 2026-04-04 005851.png)      | ![App Screenshot](Screenshots/report1.png)    |
+
+| PowerBI Report with Cascading Filters                       | PowerBI report with Drill Down                        | PowerBI report with Drill Through |
+| ---------------------------------- | -------------------------------------- | ---------------------------------- |
+| ![App Screenshot](Screenshots/report2.png)    |   ![App Screenshot](Screenshots/report3.png)      | ![App Screenshot]Screenshots/report4.png)    |
+
